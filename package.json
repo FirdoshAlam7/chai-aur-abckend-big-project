@@ -1,0 +1,15 @@
+{
+  "name": "chai_aur_backend_big_project",
+  "version": "1.0.0",
+  "description": "a backend in at chai or code chanel - toutube",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "backend"
+  ],
+  "author": "Firdosh Alam",
+  "license": "ISC"
+}
