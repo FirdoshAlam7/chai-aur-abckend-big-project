@@ -45,7 +45,6 @@ const userSchema = new Schema(
     },
     refreshToken: {
       type: String,
-      required: [true, "Refresh Token is required"],
     },
   },
   {
@@ -68,8 +67,8 @@ userSchema.methods.generateAccessToken = async function () {
     {
       _id: this._id,
       email: this.email,
-      userName: this.username,
-      fullname: this.fullName,
+      username: this.username,
+      fullName: this.fullName,
     },
     process.env.ACCESS_TOKEN_SECRET,
     {
@@ -82,8 +81,8 @@ userSchema.methods.generateRefreshToken = async function () {
     {
       _id: this._id,
       email: this.email,
-      userName: this.username,
-      fullname: this.fullName,
+      username: this.username,
+      fullName: this.fullName,
     },
     process.env.REFRESH_TOKEN_SECRET,
     {
